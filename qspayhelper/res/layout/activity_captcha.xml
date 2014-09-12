@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ 	android:layout_width="match_parent" 
+ 	android:layout_height="match_parent" >
+
+    <EditText
+        android:id="@+id/txtCaptcha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgCaptcha"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:ems="10" />
+
+    <ImageView
+        android:id="@+id/imgCaptcha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/ic_launcher" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtCaptcha"
+        android:layout_marginTop="24dp"
+        android:layout_toLeftOf="@+id/imgCaptcha"
+        android:text="取 消" />
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnCancel"
+        android:layout_toRightOf="@+id/imgCaptcha"
+        android:text="确 定" />
+
+</RelativeLayout>
